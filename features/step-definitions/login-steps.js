@@ -11,6 +11,10 @@ When(/^I try to login correctly$/, async() => {
     await frontPage.login('wibowo.bullseye', 'bullseye')
 });
 
+When(/^I try to login with username \"([^\"]*)\" and password \"([^\"]*)\"$/, async(username, password) => {
+    await frontPage.login(username, password)
+});
+
 Then(/^I am successfully logged in$/, async() => {
     await homePage.verifyLoginSuccess('Welcome wibowo.bullseye')
 })
