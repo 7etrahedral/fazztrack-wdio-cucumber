@@ -12,5 +12,5 @@ When(/^I try to login correctly$/, async() => {
 });
 
 Then(/^I am successfully logged in$/, async() => {
-    await homePage.verifyLoginSuccess('Welcome wibowo.bullseyefasdf')
+    await homePage.verifyLoginSuccess('Welcome wibowo.bullseye')
 })

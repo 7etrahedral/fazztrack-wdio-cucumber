@@ -11,7 +11,6 @@ class HomePage extends Page {
     }
 
     async verifyLoginSuccess(user) {
-        // await browser.pause(60000)
         return await expect(await this.accountName).toHaveText(user)
     }
 

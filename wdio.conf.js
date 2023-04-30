@@ -4,7 +4,8 @@ export const config = {
     // Runner Configuration
     // ====================
     // WebdriverIO supports running e2e tests as well as unit and component tests.
-    runner: 'local',
+    // runner: 'local',
+    // hostname: '192.168.1.20',
     hostname: 'localhost',
     port: 4444,
     path: '/wd/hub',
@@ -59,24 +60,24 @@ export const config = {
         // maxInstances can get overwritten per capability. So if you have an in-house Selenium
         // grid with only 5 firefox instances available you can make sure that not more than
         // 5 instances get started at a time.
-        maxInstances: 5,
-        //
-        browserName: 'chrome',
-        'selenoid:options': {
-            version: '112.0',
-            enableVNC: true,
-            screenResolution: "1280x1024x24"
-        },
-        acceptInsecureCerts: true,
-        'goog:chromeOptions': {
-            args: ['--no-sandbox', '--window-size=1920,1080','--disable-dev-shm-usage']
-        }
-        // If outputDir is provided WebdriverIO can capture driver session logs
-        // it is possible to configure which logTypes to include/exclude.
-        // excludeDriverLogs: ['*'], // pass '*' to exclude all driver session logs
-        // excludeDriverLogs: ['bugreport', 'server'],
-    },
-    {
+    //     maxInstances: 5,
+    //     //
+    //     browserName: 'chrome',
+    //     'selenoid:options': {
+    //         version: '112.0',
+    //         enableVNC: true,
+    //         screenResolution: "1280x1024x24"
+    //     },
+    //     acceptInsecureCerts: true,
+    //     'goog:chromeOptions': {
+    //         args: ['--no-sandbox', '--window-size=1920,1080','--disable-dev-shm-usage']
+    //     }
+    //     // If outputDir is provided WebdriverIO can capture driver session logs
+    //     // it is possible to configure which logTypes to include/exclude.
+    //     // excludeDriverLogs: ['*'], // pass '*' to exclude all driver session logs
+    //     // excludeDriverLogs: ['bugreport', 'server'],
+    // },
+    // {
         maxInstances: 5,
         //
         browserName: 'firefox',
