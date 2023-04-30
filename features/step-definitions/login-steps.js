@@ -18,3 +18,7 @@ When(/^I try to login with username \"([^\"]*)\" and password \"([^\"]*)\"$/, as
 Then(/^I am successfully logged in$/, async() => {
     await homePage.verifyLoginSuccess('Welcome wibowo.bullseye')
 })
+
+Then(/^I am successfully logged in with username \"([^\"]*)\"$/, async(username) => {
+    await homePage.verifyLoginSuccess(`Welcome ${username}`)
+})
